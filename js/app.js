@@ -16,7 +16,8 @@ var startNewGame = function () {
 	$("#userGuess").val("");
 	$("#guessList").empty();
 	$("#feedback").text("Make your Guess!");
-  	$("#count").text("0");
+	guessCounter = 0;
+  	$("#count").text(guessCounter);
 	generateNumber();
 }
 
