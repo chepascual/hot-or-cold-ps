@@ -81,7 +81,7 @@ startNewGame();
 
   		console.log(currentGuess, typeof currentGuess);
 
-		if (typeof currentGuess == "number" && isFinite(currentGuess) && currentGuess % 1 === 0) {
+		if (typeof currentGuess == "number" && isFinite(currentGuess) && currentGuess % 1 === 0 && currentGuess > 0 && currentGuess <101) {
 
 	  		evaluateGuess();
 	  		console.log("feedback ", feedbackComment);
